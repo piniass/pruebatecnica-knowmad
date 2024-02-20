@@ -1,0 +1,198 @@
+
+*{
+padding: 0;
+margin: 0;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background: rgb(255,172,23);
+background: linear-gradient(90deg, rgba(255,172,23,1) 0%, rgba(250,182,3,1) 53%, rgba(255,206,0,1) 100%);
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: orange;
+    padding: 10px;
+}
+.nav li{
+    list-style: none;
+}
+.nav a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.left-mobile{
+    display: none;
+}
+
+.right-mobile{
+    display: none;
+}
+
+.puntuacion{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.jugador-izq, .jugador-der{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:15px;
+    padding: 5px;
+}
+.img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: -1px 10px 17px -6px rgba(0,0,0,0.75);
+}
+
+.datos{
+    text-align: center;
+}
+
+.pregunta{
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.384);
+    margin-top: 15px;
+    text-align: center;
+    color: #fff;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.respuesta{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    padding: 20px;
+
+}
+
+.respuesta h5{
+    font-size: 1.5rem;
+}
+
+.respuesta-container{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.respuesta-container p{
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.603);
+    padding: 15px;
+    font-size: 1.3rem;
+    border-radius: 15px;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.respuesta-container p:hover{
+    background-color: rgba(255, 255, 255, 0.699);
+    box-shadow: -1px 10px 17px -6px rgba(0,0,0,0.75);
+}
+
+.menu{
+    z-index: 0;
+    background-color: white;
+    width: 80%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: 18px 15px 17px -6px rgba(0,0,0,0.75);
+}
+
+.header-mobile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    gap: 15px;
+    background: rgb(255,206,0);
+    background: linear-gradient(90deg, rgba(255,206,0,1) 0%, rgba(250,182,3,1) 76%, rgba(255,172,23,1) 100%);
+
+}
+.header-mobile p {
+    color: white;
+    font-weight: bold;
+}
+.puntos-container{
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.star{
+    color: white;
+}
+#cerrar{
+    justify-self: flex-end;
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+.enlace-mobile{
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.iconos{
+    color: orange;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin-left: 70px;
+}
+
+.logo{
+    width: 250px;
+}
+
+.inactiva{
+    display: none;
+}
+
+
+@media only screen and (max-width: 550px){
+    .left-mobile{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    .right-mobile{
+        display: inline;
+    }
+}
+@media only screen and (max-width: 425px) {
+    
+    .jugador-izq{
+        flex-direction: column;
+    }
+    .jugador-der{
+        flex-direction: column-reverse;
+    }
+  }
